@@ -1,0 +1,82 @@
+DELETE FROM book;
+ALTER TABLE book AUTO_INCREMENT = 1001;
+
+DELETE FROM category;
+ALTER TABLE category AUTO_INCREMENT = 1001;
+
+INSERT INTO `category` (`name`) VALUES ('Classics'),('Fantasy'),('Mystery'),('Romance'),('Art'),('Architecture'),('Computer'),('Graphic'),('History'),('Poetry'),('Fiction');
+# classic
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Great Gatsby', 'F. Scott Fitzgerald', '', 699, 0, TRUE, FALSE, 1001);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Little Women', 'Louisa May Alcott', '', 799, 0, TRUE, FALSE, 1001);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Animal Farm', 'George Orwell', '', 599, 0, FALSE, FALSE, 1001);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Scarlet Letter', 'Nathaniel Hawthorne', '', 499, 0, FALSE, FALSE, 1001);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Don Quixote', 'Miguel de Cervantes', '', 399, 0, TRUE, FALSE, 1001);
+
+# fantasy
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Lord of the Rings', 'J. R. R. Tolkien', '', 499, 0, FALSE, FALSE, 1002);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('A Game of Thrones', 'George R. R. Martin', '', 399, 0, TRUE, FALSE, 1002);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Assassin''s Apprentice', 'Robin Hobb', '', 599, 0, FALSE, FALSE, 1002);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Magicians', 'Lev Grossman', '', 799, 0, FALSE, FALSE, 1002);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Under the Whispering Door', 'TJ Klune', '', 699, 0, TRUE, FALSE, 1002);
+# mystery
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Murder on the Orient Express', 'Agatha Christie', '', 599, 0, FALSE, FALSE, 1003);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Silent Patient', 'Alex Michaelides', '', 599, 0, TRUE, FALSE, 1003);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Guest List', 'Lucy Foley', '', 699, 0, FALSE, FALSE, 1003);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Da Vinci Code', 'Dan Brown', '', 899, 0, FALSE, FALSE, 1003);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('In the Woods', 'Tana French', '', 899, 0, TRUE, FALSE, 1003);
+# romance
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Red, White & Royal Blue', 'Casey McQuiston', '', 599, 0, FALSE, FALSE, 1004);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Beach Read', 'Emily Henry', '', 299, 0, TRUE, FALSE, 1004);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Duke and I', 'Julia Quinn', '', 399, 0, TRUE, FALSE, 1004);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Love Hypothesis', 'Ali Hazelwood', '', 699, 0, TRUE, FALSE, 1004);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Fifty Shades of Grey', 'E. L. James', '', 1099, 0, FALSE, FALSE, 1004);
+
+#art
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Story of Art', 'Ernst Gombrich', '', 599, 0, FALSE, FALSE, 1005);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Louvre: All the Paintings', 'Anja Grebe', '', 299, 0, FALSE, FALSE, 1005);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Women, Art, and Society', 'Whitney Chadwick', '', 399, 0, TRUE, FALSE, 1005);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Hilma Af Klint: Paintings for the Future', 'Julia Voss and Tessel M. Bauduin', '', 699, 0, TRUE, FALSE, 1005);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Modern Artifacts', 'Michelle Elligott', '', 1099, 0, FALSE, FALSE, 1005);
+
+#architecture
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('A Pattern Language', 'Christopher Alexander, Murray Silverstein, and Sara Ishikawa', '', 239, 0, FALSE, FALSE, 1006);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('De architectura', 'Vitruvius', '', 119, 0, FALSE, FALSE, 1006);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Why Architecture Matters', 'Paul Goldberger', '', 109, 0, TRUE, FALSE, 1006);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Modern architecture since 1900', 'William J. R. Curtis', '', 209, 0, TRUE, FALSE, 1006);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The poetics of space', 'Gaston Bachelard', '', 249, 0, TRUE, FALSE, 1006);
+
+#computer
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The C Programming Language. 2nd Edition', 'Brian Kernighan and Dennis Ritchie', '', 229, 0, FALSE, FALSE, 1007);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Cracking the Coding Interview', 'Gayle Laakmann McDowell', '', 159, 0, FALSE, FALSE, 1007);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Clean Code', 'Robert Cecil Martin', '', 129, 0, TRUE, FALSE, 1007);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('HTML & CSS: Design and Build Web Sites', 'Jon Duckett', '', 119, 0, TRUE, FALSE, 1007);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Code Complete', 'Steve McConnell', '', 399, 0, FALSE, FALSE, 1007);
+
+#graphic
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Maus', 'Art Spiegelman', '', 159, 0, FALSE, FALSE, 1008);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Smile', 'Raina Telgemeier', '', 299, 0, TRUE, FALSE, 1008);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('New Kid', 'Jerry Craft', '', 249, 0, FALSE, FALSE, 1008);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('El Deafo', 'Cece Bell', '', 149, 0, TRUE, FALSE, 1008);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Nimona', 'Noelle Stevenson', '', 99, 0, FALSE, FALSE, 1008);
+
+#history
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Sapiens: A Brief History of Humankind', 'Yuval Noah Harari', '', 599, 0, FALSE, FALSE, 1009);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Devil in the White City', 'Erik Larson', '', 299, 0, TRUE, FALSE, 1009);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Warmth of Other Suns', 'Isabel Wilkerson', '', 399, 0, TRUE, FALSE, 1009);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Rise and Fall of the Third Reich', 'William L. Shirer', '', 149, 0, TRUE, FALSE, 1009);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Caste: The Origins of Our Discontents', 'Isabel Wilkerson', '', 199, 0, FALSE, FALSE, 1009);
+
+#poetry
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Milk and honey', 'Rupi Kaur', '', 299, 0, FALSE, FALSE, 1010);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Home Body', 'Rupi Kaur', '', 299, 0, TRUE, FALSE, 1010);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Leaves of Grass', 'Walt Whitman', '', 399, 0, TRUE, FALSE, 1010);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Call Us What We Carry: Poems', 'Amanda Gorman', '', 699, 0, FALSE, FALSE, 1010);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Citizen: An American Lyric', 'Claudia Rankine', '', 199, 0, FALSE, FALSE, 1010);
+
+#fiction
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Nineteen Eighty-Four', 'George Orwell', '', 599, 0, TRUE, FALSE, 1011);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Where the Crawdads Sing', 'Delia Owens', '', 199, 0, TRUE, FALSE, 1011);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Apples Never Fall', 'Liane Moriarty', '', 699, 0, FALSE, FALSE, 1011);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Beloved', 'Toni Morrison', '', 599, 0, TRUE, FALSE, 1011);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('All the Light We Cannot See', 'Anthony Doerr', '', 1099, 0, TRUE, FALSE, 1011);
+
